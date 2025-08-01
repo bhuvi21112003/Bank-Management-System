@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Register</title>
+</head>
+<body>
+     <h1>Register</h1>
+
+     <form onsubmit="return showAlert()">
+        <div class="reg1">
+            <label for="fname" >Full Name</label>
+            <input type="text" placeholder="Enter Full Name" required>
+            <br> 
+            <br>
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter Mail Id" required>
+            <br>
+            <br>
+            <label for="mobno"> Mobile Number</label>
+            <input type="number" placeholder="Enter Mobile Number" required>
+            <br>
+            <br>
+            <label for="uname" >User Name</label>
+            <input type="text" placeholder="Enter User Name" required>
+            <br> 
+            <br>
+            <label for="pword"> Password</label>
+            <input type="password" placeholder="Enter Your Password" required>
+            <br>
+            <br>
+            <label for="cpword"> Confirm Password</label>
+            <input type="password" placeholder="Enter Confirm Password" required>
+            <br> 
+            <br>
+            <p > Select your Gender</p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <br>
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" >
+            <br>
+            <br>
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <br>
+            <br>
+              <label for="accno" >Ac No.</label>
+            <input type="number" placeholder="Enter your Ac No." required>
+            <br>
+            <br>
+              <label for="ifsc" >IFSC Code</label>
+            <input type=" " placeholder="Enter your IFSC code" required>
+            <br>
+            <br>
+            <br>
+             <input type="checkbox" name="terms" required>
+                I agree to the terms and conditions<br>
+                <br>
+                <button class="sub"> Submit </button>
+                
+
+        </div>
+     </form>
+      <script>
+    function showAlert() {
+      alert("Successfully Registered!");
+      return false; 
+    }
+  </script>
+</body>
+</html>
