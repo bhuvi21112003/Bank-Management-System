@@ -3,18 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank Management system</title>
+    <title>Bank Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f2f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            box-sizing: border-box;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+            white-space: nowrap;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-btn {
+            color: #f5f7f5;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 8px 20px;
+            background: #0056b3;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover {
+            color: #007BFF;
+        }
+
+        .nav-btn:hover {
+            background-color: #ccc;
+            color: white;
+            border-color: #ccc;
+        }
+
+        .bank {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .bank h1 {
+            
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+            
+        }
+
+        .bank p {
+            font-size: 1.1rem;
+            color: #120101;
+            text-align: justify;
+            line-height: 1.6;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    </style>
 </head>
 <body>
-<button onclick="window.location.href='register.html'">Register</button>
-<button onclick="window.location.href='Login.html'">Login</button>
-
-    
-    <div class="home">
-        <a href="#"> Home</a>
-        <a href="#"> About</a>
-        <a href="#"> Contact</a>
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-btn" onclick="window.location.href='Login.html'">Log in</button>
+            <button class="nav-btn" onclick="window.location.href='register.html'">Register</button>
+        </div>
     </div>
-    
+
+    <div class="bank">
+        <h1>About Bank </h1>
+        <p>A bank is a financial institution that accepts deposits from the public and creates a demand deposit while simultaneously making loans.[1] Lending activities can be directly performed by the bank or indirectly through capital markets.[2]
+
+As banks play an important role in financial stability and the economy of a country, most jurisdictions exercise a high degree of regulation over banks. Most countries have institutionalized a system known as fractional-reserve banking, under which banks hold liquid assets equal to only a portion of their current liabilities.[3] In addition to other regulations intended to ensure liquidity, banks are generally subject to minimum capital requirements based on an international set of capital standards, the Basel Accords.[4]
+
+Banking in its modern sense evolved in the fourteenth century in the prosperous cities of Renaissance Italy but, in many ways, functioned as a continuation of ideas and concepts of credit and lending that had their roots in the ancient world. In the history of banking, a number of banking dynasties – notably, the Medicis, the Pazzi, the Fuggers, the Welsers, the Berenbergs, and the Rothschilds – have played a central role over many centuries. The oldest existing retail bank is Banca Monte dei Paschi di Siena (founded in 1472), while the oldest existing merchant bank is Berenberg Bank (founded in 1590).</p>
+    </div>
 </body>
 </html>

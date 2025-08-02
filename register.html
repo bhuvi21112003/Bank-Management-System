@@ -4,58 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .register-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 400px;
+            max-width: 90%;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .radio-group {
+            margin: 15px 0;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .radio-option input {
+            margin-right: 8px;
+        }
+
+        .terms {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .terms input {
+            margin-right: 8px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
+   <div class="register-container">
      <h1>Register</h1>
 
      <form onsubmit="return showAlert()">
-        <div class="reg1">
+        <div class="form-group">
             <label for="fname" >Full Name</label>
             <input type="text" placeholder="Enter Full Name" required>
-            <br> 
-            <br>
+            </div>
+            <div class="form-group">
             <label for="email">Email</label>
             <input type="text" placeholder="Enter Mail Id" required>
-            <br>
-            <br>
+          </div>
+          <div class="form-group">
             <label for="mobno"> Mobile Number</label>
             <input type="number" placeholder="Enter Mobile Number" required>
-            <br>
-            <br>
+            </div>
+            <div class="form-group">
             <label for="uname" >User Name</label>
             <input type="text" placeholder="Enter User Name" required>
-            <br> 
-            <br>
+           </div>
+            <div class="form-group">
             <label for="pword"> Password</label>
             <input type="password" placeholder="Enter Your Password" required>
-            <br>
-            <br>
+           </div>
+            <div class="form-group">
             <label for="cpword"> Confirm Password</label>
             <input type="password" placeholder="Enter Confirm Password" required>
-            <br> 
-            <br>
+            </div>
+            <div class="form-group">
             <p > Select your Gender</p>
+            <div class="radio-group">
             <label for="male">Male</label>
             <input type="radio" id="male" name="gender" value="male">
-            <br>
-            <br>
+           
             <label for="female">Female</label>
             <input type="radio" id="female" name="gender" value="female" >
-            <br>
-            <br>
+            
             <label for="other">Other</label>
             <input type="radio" id="other" name="gender" value="other">
-            <br>
-            <br>
+           
+            </div>
+            <div class="form-group">
               <label for="accno" >Ac No.</label>
             <input type="number" placeholder="Enter your Ac No." required>
-            <br>
-            <br>
+            </div>
+            <div class="form-group">
               <label for="ifsc" >IFSC Code</label>
             <input type=" " placeholder="Enter your IFSC code" required>
-            <br>
-            <br>
-            <br>
+           </div>
+           
              <input type="checkbox" name="terms" required>
                 I agree to the terms and conditions<br>
                 <br>
